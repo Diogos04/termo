@@ -1,5 +1,5 @@
 const rows = document.querySelectorAll(".row");
-const currentRow = 0; // Apenas a primeira linha
+const currentRow = 0;
 let currentCell = 0;
 
 const palavraSecreta = "CHOMA";
@@ -43,7 +43,7 @@ function desativarTeclado() {
   });
 }
 
-// Usar apenas o teclado virtual da tela
+// Usa o teclado virtual da tela
 document.querySelectorAll(".key").forEach(button => {
   button.addEventListener("click", () => {
     if (tentativas >= maxTentativas) return;
